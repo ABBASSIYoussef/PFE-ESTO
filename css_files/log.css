@@ -1,0 +1,477 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+html{
+    height: 100%;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f8;
+  }
+.top-header{
+    background-color: #071d39;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+.top-header >*{
+    flex: 1 100%;
+    
+    
+}
+.top-header__left{ 
+    margin-left: 30px;
+    align-self: center;
+}
+.top-header__left p{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: #dbdbe5;
+    
+    
+}
+.top-header__left span{
+    font-weight: bold;
+    color: white;
+}
+.top-header__right{
+    
+    
+    display: flex;
+    flex-flow: row wrap;
+    margin-left:30px;
+    align-self: center;
+}
+.top-header__right >* {
+    flex: 1 100%;
+    align-self: center;
+    
+    
+}
+.top-header-right__registration a{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.top-header-right__item{
+    list-style: none;   
+    display: inline-block;
+}
+.top-header-right__item a{
+    color: #dbdbe5;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;   
+}
+.top-header{
+    border-bottom: 4px solid #f6a34b;
+}
+
+@media  (min-width: 600px){
+    .top-header__left p{
+        padding: 15px 0px 15px 30%;
+    }
+    .top-header-right__item a{
+    margin: 0px 5px;
+    }
+    
+    .top-header__left {
+        flex: 1;
+    }
+    .top-header__right{
+        flex: 1;
+    }
+    .top-header-right__registration{
+        flex: 1;
+        
+    }
+    .top-header-right__items{
+        flex: 1;
+        
+    }
+    
+}
+/*-----------*/
+
+#main-div__wrap{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 100px;
+}
+
+#main-div__wrap > *{
+    flex: 1 100% ;
+   
+}
+.main-div__connexion{
+    margin: 30px ;
+    background-color: white;
+    padding-left: 20px;
+    
+}
+.main-div__connexion >* {
+    padding: 0 30px;
+    
+}
+
+.div-connexion__top h1{
+    margin: 30px 0px 0px 0px;
+    padding: 5px 0px;
+    color: #272630;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;  
+    border-top: 2px solid #ff5722;
+    display: inline-block; 
+    text-transform: uppercase;
+}
+.div-connexion-top_col h1{
+    border-color:rgba(81, 203, 238, 1);
+    
+}
+.div-connexion__form{
+    margin-bottom: 20px;
+}
+.div-connexion__item {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.div-connexion__item >* {
+    margin-bottom: 5px;
+}
+.div-connexion__item > label{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+.div-connexion__item input[type="text"]{
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 43px;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ededed
+}
+.div-connexion__item input[type="password"]{
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 43px;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ededed
+}
+.div-connexion__item input[type="email"]{
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 43px;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ededed
+}
+#session{
+    margin-bottom: 5px;
+    padding: 15px 0px;
+}
+#session input{
+    margin: 4px 0px 0px 0px;
+}
+#session label{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+.submit{
+    margin-top: 25px;
+}
+.submit input{
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    background-color: #50ab00;
+    color: rgba(255,255,255,.87);
+    border-radius: 2px;
+    letter-spacing: inherit;
+    cursor: pointer;
+    border: 0;
+}
+.submit input:hover{
+    background-color: #84bb55;
+    transition: 0.5s;
+}
+.submit a{
+    color: rgba(0,0,0,.87);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 10px 14px;
+    letter-spacing: inherit;
+    text-decoration: none;
+}
+.submit a:hover{
+    color: #337ab7;
+    text-decoration: underline;
+}
+.main-div__registration{
+    background-color: white;
+}
+.div-connexion__formflex form{
+    display: flex;
+    flex-flow: row wrap;
+}
+.div-connexion__formflex form>*{
+    flex: 1 100%;
+}
+.form__item{
+    padding-right: 25px;
+    margin-bottom: 10px;
+}
+.submit__register input[type="submit"]{
+    background-color: #2aafd2;
+}
+.submit__register input[type="submit"]:hover{
+    background-color: #4e6cef;
+    transition: 0.5s;
+}
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+
+}
+input[type="password"]:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+
+}
+input[type="email"]:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+
+}
+@media  (min-width: 1400px) {
+    .div-connexion__formflex form>*{
+        flex: 1 50%;      
+    }
+    #connexion__top{
+        flex: 1 ;
+        margin-left: 150px;
+    }
+    #register__top {
+        flex: 1.5 ;
+        margin-right: 150px;
+        
+    }
+    .div-connexion-wrap{
+        width: 50%;
+    }     
+}
+@media  (min-width: 1200px) {
+    .div-connexion__formflex form>*{
+        flex: 1 50%;      
+    }
+    #connexion__top{
+        flex: 1 ;
+        margin-left: 75px;
+    }
+    #register__top {
+        flex: 1.5 ;
+        margin-right: 75px;
+        
+    }
+    .div-connexion-wrap{
+        width: 50%;
+    }     
+}
+@media  (min-width: 800px) {
+    .div-connexion__formflex form>*{
+        flex: 1 50%;      
+    }
+    #connexion__top{
+        flex: 1 ;
+        
+    }
+    #register__top {
+        flex: 2 ;
+        
+    }
+    .div-connexion-wrap{
+        width: 50%;
+    }     
+}
+
+
+
+
+/*----------------*/
+
+
+
+
+.main-header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.logo{
+    color: #041c3c;
+    font-weight: bold;
+    text-decoration: none;
+    
+    font-size: 50px;
+    font-family: "Roboto",sans-serif;
+}
+
+.main-nav__items{
+    display: flex;
+    padding: 0;
+    list-style: none;  
+}
+.main-nav__item {
+    margin: 0 16px;
+    
+  }
+.main-nav__item a{
+    
+    text-decoration: none;
+    color: #071d39;
+    font-weight: bold;
+    padding: 0.2rem 0;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.main-nav__item a:hover{
+    color: black;  
+}
+
+@media (max-width:600px){
+    .main-nav__items{
+       flex-flow: column wrap;
+       
+    }
+   
+    .main-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}
+/**********/
+
+/**********/
+.footer{
+    display: flex;
+    background-color: #071d39;
+    color: white;
+    flex-flow: row wrap;
+    padding: 25px 50px 0px 50px;
+    margin-top: auto;
+    
+}
+.footer > *{
+    flex: 1 100%;
+}
+.footer-left{
+    margin-right: 20px;
+    margin-bottom: 32px;
+}
+.footer-left p {
+    
+    font-size: 16px;
+    text-align: justify;
+    
+} 
+
+.footer-right{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.footer-right>*{
+    flex: 1 50%;
+    margin-right: 20px;
+}
+.footer ul{
+    list-style: none;
+}
+
+.box li a{
+    border-bottom: 2px solid #e28743;
+    margin: 0px 0px 5px 0px;
+    
+    
+}
+#footer-right__nav{
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.li__h2{
+    border-bottom: 2px solid #59e6c9;
+    display: inline;
+    
+}
+
+#footer-right__adress{
+    line-height: 25px;
+}
+.box-h {
+    border: 5px solid #e28743;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+#footer-right__sos{
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.footer a{
+    text-decoration: none;
+}
+.box  a{
+    color: white;
+    
+}
+
+
+
+.footer-bottom{
+    padding: 10px 0px;
+} 
+@media  (min-width: 600px){
+    .footer-right>*{
+        flex: 1;
+    }
+        
+    .footer-left{
+        flex: 1;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+    .footer ul{
+    list-style: none;
+}
+.footer-left p {
+    padding-right: 20%;
+}
+}

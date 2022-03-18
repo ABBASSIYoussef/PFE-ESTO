@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+
+}
+html{
+    background-image: url(../img_utilise/light-blue-backgrounds-2.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;  
+    min-height: 100%;
+}
+body{
+    
+    font-family: 'Montserrat';
+    text-align: center;
+    
+   
+}
+
+#salute{
+    
+    font-size: 30px;
+    margin: 50px 0px 25px 0px;
+    padding: 10px;
+    
+    font-weight: bold;
+    border-style: solid;
+    border-width: 3px;
+    
+    display: inline-block;
+    color: white;
+    font-family: 'Montserrat';
+    background-color: #2c3844;
+    border-image: linear-gradient(45deg, #e09b1a, #006eff) 1;
+}
+
+
+.container{
+    
+    display: flex;
+    justify-content: center;  
+    
+    margin: 20px 0px;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    background-color:  #f5c002;
+    color: rgba(255,255,255,.87);
+    border-radius: 2px;
+    letter-spacing: inherit;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    outline:none;
+}
+.buttons button {
+    text-decoration: none;
+    
+    font-family: 'Montserrat',sans-serif;
+    
+    
+    font-weight: bold;
+    color : rgb(85, 26, 139)
+}
+ .buttons button:hover{
+    background-color: rgba(81, 203, 238, 1);
+    transition: 0.5s;
+}
+.tableur{
+    border-spacing: 5px 5px;
+    
+    
+    
+}
+
+.label{
+    background-color: #6c7ae0;
+    border: 2px solid #236599;
+    border-radius: 5px;
+    
+}
+input[type="submit"]{
+    background-color: #f5c002;
+}
+input[type="submit"]:hover{
+    transition: 0.5s;
+    background-color:rgba(81, 203, 238, 1);
+}
+input{
+    border: 2px solid #236599;
+    border-radius: 5px;
+    float:left;
+    outline: none;
+    
+}
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
+    border-color: rgba(81, 203, 238, 1);
+}
+input[type="submit"]{
+    margin-top: 8px;
+    padding: 5px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+.label >*{
+    color: white;
+    float: left; 
+}
+td{
+    margin: 0 15px;
+}
+
+
+td>*{
+    font-size: 22px;
+    padding: 20px;
+}
+
+
